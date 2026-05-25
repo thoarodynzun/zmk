@@ -1,3 +1,5 @@
+name: zmk-keyboard-lily58lp
+
 build:
   settings:
     board_root: .
