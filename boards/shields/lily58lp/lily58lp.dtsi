@@ -1,11 +1,11 @@
     
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "lily58lp-layouts.dtsi"
+#include <layouts/kata0510/lily58.dtsi>
 
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &kata0510_lily58_layout;
     };
 
    
@@ -41,8 +41,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 
     };
 
-&physical_layout0 {
-    kscan = <&kscan0>; // Label of the kscan node this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
+&kata0510_lily58_layout {
+    transform = <&default_transform>;
 };
-
