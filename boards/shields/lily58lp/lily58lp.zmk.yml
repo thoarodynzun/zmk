@@ -1,0 +1,9 @@
+file_format: "1"
+id: lily58lp
+name: Lily58 LP
+type: shield
+features:
+  - keys
+siblings:
+  - lily58lp_left
+  - lily58lp_right
