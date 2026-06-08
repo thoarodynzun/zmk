@@ -14,16 +14,29 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "Base";
 
             bindings = <
-&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                    &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp DEL
-&kp TAB   &kp Q  &kp W  &kp E    &kp R    &kp T                     &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
-&kp LCTRL &kp A  &kp S  &kp D    &mt LSHFT F   &kp G                &kp H  &mt RSHIFT J    &kp K     &kp L   &kp SEMI &kp SQT
+&kp ESC   &kp N1 &kp N2 &kp N3   &kp N4        &kp N5                    &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp DEL
+&kp TAB   &kp Q  &kp W  &kp E    &kp R         &kp T                     &kp Y  &kp U    &kp I     &kp O   &kp P    &kp MINUS
+&kp LCTRL &kp A  &kp S  &kp D    &mt LSHFT F   &kp G                     &kp H  &mt RSHIFT J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT       &kp RBKT   &kp N  &kp M   &kp COMMA &kp DOT &kp FSLH &kp EQUAL
                         &kp LALT &kp LGUI &mo 1  &kp SPACE      &kp RET  &kp BSPC  &kp DOWN &kp RIGHT
             >;
 
         };
+        lower_layer {
+			display-name = "Alt Layer";
+
+			bindings = <
+&kp GRAVE &bt F1    &bt F2      &bt F3      &bt F4    &bt F5            	                    &kp F6 	&kp F7	&kp F8      &kp F9      &kp F10     &kp F11  
+&trans	  &trans    &trans      &trans      &trans    &trans	        					    &trans  &trans  &trans      &kp UP      &kp CAPS    &kp F12
+&trans    &trans  	&trans	    &trans      &trans    &trans        						    &trans  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans
+&trans    &trans  	&trans      &trans      &trans	  &trans   &trans	                &trans  &trans  &trans  &trans 	    &trans      &kp NUBS    &trans
+                              &trans      &trans	  &mo 1    &trans	                &trans  &trans  &kp UP  &kp LEFT
+			>;
+
+		};
 
     };
 };
