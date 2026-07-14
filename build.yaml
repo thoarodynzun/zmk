@@ -23,8 +23,5 @@ include:
     shield: lily58lp_left
   - board: nice_nano_v2
     shield: lily58lp_right
-  - board: nrf52840dongle_nrf52840
-    shield: lily58lp_dongle nice_view
-    artifact-name: lily58lp_dongle_display
   - board: nice_nano_v2
     shield: settings_reset
