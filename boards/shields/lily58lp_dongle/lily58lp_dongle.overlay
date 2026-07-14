@@ -1,0 +1,10 @@
+/*
+ * Central dongle shield for the Lily58 split keyboard.
+ * This selects the Nice View display for the dongle firmware.
+ */
+
+/ {
+    chosen {
+        zephyr,display = &nice_view;
+    };
+};
