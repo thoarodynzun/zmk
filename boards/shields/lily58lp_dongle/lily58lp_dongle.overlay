@@ -1,0 +1,11 @@
+/*
+ * Central dongle shield for the Lily58 split keyboard.
+ * This is intentionally minimal because the dongle acts as the wireless host
+ * and does not need its own matrix scan.
+ */
+
+/ {
+    chosen {
+        zephyr,display = &nice_view;
+    };
+};
